@@ -1,12 +1,7 @@
-fetch('https://dragonball-api.com/api/characters/')
-    method: "GET"
-    headers:{
-        "Content-Type": "application/json"
-    }
-    body: JSON.stringify()
-    .then(response => response.json())
-    .then(data => {
-        console.log(data.data[1].name);
-    })
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
 
-    .catch(error => console.error("Error", error));
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});

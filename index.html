@@ -3,19 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first website</title>
-    <link rel="stylesheet" href="style.css">
-</head> 
-<body style = "background-color: lightgray;">
-    <h1 style = "color: blue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Welcome</h1>
-    <p> Let's learn about your favourite characters!</p>
-    <textarea placeholder="Input character name..." style = "border: 1pt solid black; width: 200px; height: 20px;"></textarea>
-    
-    <br>
-    <button style = "border: 1pt solid black;">Search...</button>
+    <title>Dragonball Website</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"></link> 
+</head>
 
-    <br>
-    <img src = "db.png" alt = "DBZ" width = "800px" height = "500px">
-  
+<body>
+    <nav class = "navbar">
+        <div class="navbar__container">
+            <a href = "#" id = "navbar__logo">W.O.D</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                </li>
+                 <li class="navbar__item">
+                    <a href="/" class="navbar__links">Characters</a>
+                </li>
+                 <li class="navbar__btn">
+                    <a href="/" class="button">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="main">
+       <div class="main__container">
+        <div class="main__content">
+            <h1>Welcome to the World Of</h1>
+            <h2>Dragonball</h2>
+             <p>Explore the world of Dragonball, from the iconic characters to the powerful techniques. Join us on this epic journey!</p>
+        </div>
+        <div class="main__img--container">
+            <img src="images/img3.svg" alt="pic" id="main__img">
+        </div>
+       </div>
+    </div>
+
+
+    <div class="services">
+        <h1>Let's see your knowledge!</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>Find your favourites!</h2>
+                <p>Discover your favorite Dragonball characters and explore their origins and stories.</p>
+                <button>Get started</button>
+            </div>
+        </div>
+    </div>
+    
+   <script src="index.js"></script>  
 </body>
 </html>
